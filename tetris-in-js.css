@@ -18,6 +18,15 @@
     font-family: sans-serif;
     background-color: silver;
     border-style: groove;
-    width: 70px;
-    /* height: 30px; */
+    width: 80px;
+    height: 30px;
+}
+
+.controlmini {
+    border: 3px;
+    font-family: sans-serif;
+    background-color: silver;
+    border-style: groove;
+    width: 30px;
+    height: 30px;
 }
