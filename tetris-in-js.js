@@ -18,14 +18,14 @@ var COL_NUM = 10;
 var score = 0;
 
 // 定义全部的七种方块。
-var PIECE_NUM = 1;
+var PIECE_NUM = 7;
 var bar = [[0, 0], [-1, 0], [1, 0], [2, 0]];
 var sevenShape = [[-1, -1], [-1, 0], [0, 0], [1, 0]];
-var square = [[0, 0], [1, 0], [0, 1], [1, 1]]
+var square = [[0, 0], [1, 0], [0, 1], [1, 1]];
 var sevenShapeReversed = [[-1, 1], [-1, 0], [0, 0], [1, 0]];
-var hump = [[0, 0], [-1, 0], [0, 1], [0, -1]]
-var zShape = [[0, 0], [0, 1], [-1, 1], [1, 0]]
-var zShapeReversed = [[0, 0], [0, 1], [1, 1], [-1, 0]]
+var hump = [[0, 0], [-1, 0], [0, 1], [0, -1]];
+var zShape = [[0, 0], [0, 1], [-1, 1], [1, 0]];
+var zShapeReversed = [[0, 0], [0, 1], [1, 1], [-1, 0]];
 
 var LAYOUTS = [square, bar, sevenShape, sevenShapeReversed, hump, zShape, zShapeReversed];
 var COLORS = ['red', 'blue', 'pink', 'purple', 'silver', 'orange', 'grey'];
@@ -44,9 +44,17 @@ function generatePiece() {
     // 获取 HTML 文件中的内容板 --> gameBoard
     var gameBoard = document.getElementById('gameBoard');
 
+    bar = [[0, 0], [-1, 0], [1, 0], [2, 0]];
+    sevenShape = [[-1, -1], [-1, 0], [0, 0], [1, 0]];
+    square = [[0, 0], [1, 0], [0, 1], [1, 1]];
+    sevenShapeReversed = [[-1, 1], [-1, 0], [0, 0], [1, 0]];
+    hump = [[0, 0], [-1, 0], [0, 1], [0, -1]];
+    zShape = [[0, 0], [0, 1], [-1, 1], [1, 0]];
+    zShapeReversed = [[0, 0], [0, 1], [1, 1], [-1, 0]];
+    LAYOUTS = [square, bar, sevenShape, sevenShapeReversed, hump, zShape, zShapeReversed];
+
     // 随机获取一种方块
-    pieceIdx = 3;
-    // Math.floor(PIECE_NUM * Math.random());
+    pieceIdx = Math.floor(PIECE_NUM * Math.random());
 
     // 生成一个方块的 DOM （其实是 HTML 中的一个 <div> 标签）
     var newPiece = initializePiece(pieceIdx);
@@ -379,7 +387,6 @@ function rotateClock(piece) {
         }
     }
     setPosition(piece, piece.rowPos, piece.colPos + rectifyleft + rectifyright);
-    alert('in rotate: \n'+ sevenShapeReversed +'\n' + piece.layout);
     /************************
         YOUR CODE ENDS
     *************************/
