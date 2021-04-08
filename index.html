@@ -34,15 +34,23 @@
 
                 <div class='container mt-3'>
                     <div class="position-absolute start-50 translate-middle-x ">
-                        <div style="display: flex;justify-content: center; align-items: center;">
+                        <div style="display: flex; justify-content: center; align-items: center;">
                             <div>SCORE:&nbsp; </div>
                             <div id="score"> 0 </div>
                         </div><br>
-                        <button class='controlmini' onclick="moveLeft(getElementById('currentPiece'))">⋘</button>&nbsp;
-                        <button class='controlmini' onclick="rotateAntiClock(getElementById('currentPiece'))">↪️</button>&nbsp;
-                        <button class='controlmini' onclick="fallToBottom(getElementById('currentPiece'))">⇩</button>&nbsp;
-                        <button class='controlmini' onclick="rotateClock(getElementById('currentPiece'))">↩️</button>&nbsp;
-                        <button class='controlmini' onclick="moveRight(getElementById('currentPiece'))">⋙</button>
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <button class='controlmini' onclick="rotateAntiClock(getElementById('currentPiece'))">↪️</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class='controlmini' onclick="rotateClock(getElementById('currentPiece'))">↩️</button>
+                        </div>
+                        <div style="height: 10px;"></div>
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <button class='controlmini' onclick="moveLeft(getElementById('currentPiece'))">⋘</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class='controlmini' onclick="fallToBottom(getElementById('currentPiece'))">⇩</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class='controlmini' onclick="moveRight(getElementById('currentPiece'))">⋙</button>
+                            
+                        </div>
+                        
+                        
                         
                         <!-- <button class='control' onclick="rotateAntiClock(getElementById('currentPiece'))">rotate↪️</button> -->
                     </div>
