@@ -5,10 +5,9 @@ At current phase, everything is just `test`, `test` and `test`. -- 07/04/21
 <br><br><br>
 
 ## Projects
----
 ### Project 1 - Tetries in js
 
-folder link [here]().  
+folder link [here](Project01).  
 
 Mainly work on `Javascript`, supplementary work on `html` and `css`.  
 A taste of so-called "GOP" (Google-Oriented Programming), learn to write code from "zero".  
@@ -16,7 +15,6 @@ A taste of so-called "GOP" (Google-Oriented Programming), learn to write code fr
 
 
 ## Just some reminder
----
 
 <table border = '1'>
 	<tr>
