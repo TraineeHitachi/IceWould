@@ -1,6 +1,8 @@
 # IceWould
 
-At current phase, everything is just `test`, `test` and `test`. -- 07/04/21  
+At current phase, everything is just `test`, `test` and `test`. -- 07/04/2021  
+
+Join **Make-up mirror** project, fight! -- 14/04/2021  
 
 <br><br><br>
 
@@ -13,9 +15,15 @@ folder link [here]().
 Mainly work on `Javascript`, supplementary work on `html` and `css`.  
 A taste of so-called "GOP" (Google-Oriented Programming), learn to write code from "zero".  
 
+### Project 2 - Make-up Mirror (front-end)
+
+**(Note to self: do not submit code of the project here)**
+- Project Leader: Ziang GAO
+- Project Info: On M5-201 website
 
 
-## Just some reminder
+
+## Timeline
 ---
 
 <table border = '1'>
@@ -26,9 +34,21 @@ A taste of so-called "GOP" (Google-Oriented Programming), learn to write code fr
 	<tr>
 		<td>07/04/2021</td>
 		<td>
-			- Learn to use <b>git</b> to branch and murge <br>
+			- Learn to use <b>git</b> to branch and merge <br>
 			- Deploy <code>my-tetries</code> on github  <br>
 			- Debug in <code>my-tetries</code> (hopefully, its now <i>bug-free</i>, however, not elegent enough)
+		</td>
+	</tr>
+	<tr>
+		<td>11/04/2021</td>
+		<td>
+			- 
+		</td>
+	</tr>
+	<tr>
+		<td>18/04/2021</td>
+		<td>
+			- 
 		</td>
 	</tr>
 </table>
