@@ -7,10 +7,9 @@ Join **Make-up mirror** project, fight! -- 14/04/2021
 <br><br><br>
 
 ## Projects
----
 ### Project 1 - Tetries in js
 
-folder link [here]().  
+folder link [here](Project01).  
 
 Mainly work on `Javascript`, supplementary work on `html` and `css`.  
 A taste of so-called "GOP" (Google-Oriented Programming), learn to write code from "zero".  
