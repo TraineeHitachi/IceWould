@@ -1,5 +1,9 @@
 # IceWould
 
+#### Contributor
+
+- [Yuhao Zhang](mailto:yuhao.zhang98@gmail.com)
+
 At current phase, everything is just `test`, `test` and `test`. -- 07/04/2021  
 
 Join **Make-up mirror** project, fight! -- 14/04/2021  
