@@ -268,34 +268,63 @@ function rowDown(rowNumber) {
 
 // Button / Keybord operation
 // allow keyboard operation
-document.onkeydown = function (event) {
-    /************************
-        YOUR CODE STARTS
-    *************************/
-    var event = window.event ? window.event : event;
-    var currentPiece = document.getElementById('currentPiece');
-    switch (event.keyCode) {
-        case 68: //d
-            fallToBottom(currentPiece);
-            break;
-        case 77: //m
-            rotateClock(currentPiece);
-            break;
-        case 78: //n
-            rotateAntiClock(currentPiece);
-            break;
-        case 37: //left
-            moveLeft(currentPiece);
-            break;
-        case 39: //right
-            moveRight(currentPiece);
-            break;
-    }
-    /************************
-        YOUR CODE ENDS
-    *************************/
-    return;
-}
+// document.onkeydown = function (event) {
+//     /************************
+//         YOUR CODE STARTS
+//     *************************/
+//     var event = window.event ? window.event : event;
+//     var currentPiece = document.getElementById('currentPiece');
+//     switch (event.keyCode) {
+//         case 68: //d
+//             fallToBottom(currentPiece);
+//             break;
+//         case 77: //m
+//             rotateClock(currentPiece);
+//             break;
+//         case 78: //n
+//             rotateAntiClock(currentPiece);
+//             break;
+//         case 37: //left
+//             moveLeft(currentPiece);
+//             break;
+//         case 39: //right
+//             moveRight(currentPiece);
+//             break;
+//     }
+//     /************************
+//         YOUR CODE ENDS
+//     *************************/
+//     return;
+// }
+// 23/09/16 update: remove deprecated APIs
+document.addEventListener(
+    "keydown",
+    (event) => {
+        let str = "KeyboardEvent: key='" + event.key + "' | code='" + event.code + "'";
+        console.log(str);
+
+        var currentPiece = document.getElementById('currentPiece');
+        switch (event.key) {
+            case 'ArrowDown':
+            case 'd': //d
+                fallToBottom(currentPiece);
+                break;
+            case 'm': //m
+                rotateClock(currentPiece);
+                break;
+            case 'n': //n
+                rotateAntiClock(currentPiece);
+                break;
+            case 'ArrowLeft': //left arrow <-
+                moveLeft(currentPiece);
+                break;
+            case 'ArrowRight': //right arrow ->
+                moveRight(currentPiece);
+                break;
+        }
+    },
+    true,
+);
 
 // '<-' move left
 function moveLeft(piece) {
@@ -379,7 +408,7 @@ function rotateClock(piece) {
         }
     }
     setPosition(piece, piece.rowPos, piece.colPos + rectifyleft + rectifyright);
-    alert('in rotate: \n'+ sevenShapeReversed +'\n' + piece.layout);
+    // alert('in rotate: \n'+ sevenShapeReversed +'\n' + piece.layout);
     /************************
         YOUR CODE ENDS
     *************************/
